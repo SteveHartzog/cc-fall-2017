@@ -1,7 +1,7 @@
 {
   "name": "cc-fall-2017",
   "description": "An Aurelia client application developed for the Code Camp presentation: Full Stack TypeScript.",
-  "version": "1.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/SteveHartzog/cc-fall-2017"
@@ -15,6 +15,7 @@
     "aurelia-materialize-bridge": "^0.31.0",
     "aurelia-polyfills": "latest",
     "bluebird": "^3.4.1",
+    "font-awesome": "^4.7.0",
     "materialize-css": "^0.100.2"
   },
   "peerDependencies": {},
