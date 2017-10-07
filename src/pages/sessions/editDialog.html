@@ -1,0 +1,30 @@
+<template>
+  <require from="styles/sessionDialog.css"></require>
+    
+  <ux-dialog class="session-dialog">
+    <ux-dialog-body>
+      <input class="dialog-title" value.bind="session.topic">
+      <div class="input-field">
+        <select class="dialog-name-select" value.bind="session.speaker.id" change.delegate="speakerChange($event)">
+          <template repeat.for="speaker of speakers">
+            <option value="${speaker.id}" selected="${speaker.id == session.speaker.id ? 'selected' : ''}">${speaker.firstName} ${speaker.lastName}</option>
+          </template>
+        </select>
+      </div>
+      <div class="input-field">
+          <select class="dialog-room-select" value.bind="session.room">
+            <option value="3054" selected="${session.room == 3054 ? 'selected' : ''}">Room 3054</option>
+            <option value="3058" selected="${session.room == 3058 ? 'selected' : ''}">Room 3058</option>
+            <option value="3062" selected="${session.room == 3062 ? 'selected' : ''}">Room 3062</option>
+            <option value="3026" selected="${session.room == 3026 ? 'selected' : ''}">Room 3026</option>
+            <option value="3028" selected="${session.room == 3028 ? 'selected' : ''}">Room 3028</option>
+          </select>
+        </div>
+      <textarea class="dialog-description materialize-textarea" value.bind="session.description" style="height:200px;"></textarea>
+    </ux-dialog-body>
+    <ux-dialog-footer>
+      <button class="btn btn-primary" click.trigger="controller.ok(session)">Save</button>
+      <button class="btn btn-cancel" click.trigger="controller.cancel()">Cancel</button>
+    </ux-dialog-footer>
+  </ux-dialog>
+</template>

@@ -1,0 +1,11 @@
+<template>
+  <div class="speakers-list">
+    <ul class="speakers text-center">
+      <li repeat.for="speaker of speakers">
+        <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="${speaker.firstName} ${speaker.lastName}">
+          <img width="75" height="75" class="widget-avatar" src="https://pbs.twimg.com/profile_images/${speaker.img}" click.delegate="openSpeakerCard(speaker)">
+        </a>
+      </li>
+    </ul>
+  </div>    
+</template>

@@ -1,0 +1,91 @@
+.row {
+  padding-left: 30px;
+}
+
+.col5 {
+  width: 18.8%;
+}
+
+section.content-well {
+  padding-left: 20px;
+  height: calc(-65px + 100vh);
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.time-header {
+  cursor: default;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 15px 15px 15px 0px;
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+}
+
+.admin {
+  background-color: #777;
+  border: 1px solid #666;
+  display: table;
+}
+
+.lunch {
+  background-color: #6eaeec;
+  border: 1px solid #fff;
+  color: #333;
+  display: table;
+}
+
+.card-container {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+  height: 220px;
+  margin-right: 10px;
+  border-color: #333 !important;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #6eaeec;
+}
+
+card:last-of-type .card-container {
+  margin-right: 0;
+}
+
+.card-container .card-header {
+  background-color: #000;
+  display:inline-block;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-container .card-header > .card-title {
+  cursor: default;  
+  /* font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-family: Tahoma;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  /* text-transform: uppercase; */
+  font-variant: small-caps;
+  color: #B49428;
+}
+
+.card-container .card-body {
+  flex-grow: 1;
+  cursor: default;
+  padding: 15px;
+}
+
+.card-container .card-footer {
+  cursor: default;
+  padding-left: 15px;  
+  padding-bottom: 7px;
+}

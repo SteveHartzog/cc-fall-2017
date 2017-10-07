@@ -1,0 +1,14 @@
+<template bindable="item">
+  <div class="card-container col5">
+    <div class="card-header">
+      <div class="card-title" textcontent.bind="item.topic"></div>
+    </div>
+    <div class="card-body">
+      <div class="column">${item.speaker.firstName} ${item.speaker.lastName}</div>
+      <div class="column">Room ${item.room}</div>
+    </div>
+    <div class="card-footer">
+      <button class="waves-effect btn btn-primary" click.trigger="clickEdit()">more</button>
+    </div>
+  </div>
+</template>

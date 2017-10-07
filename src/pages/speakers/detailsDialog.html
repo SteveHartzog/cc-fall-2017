@@ -1,0 +1,26 @@
+<template>
+  <require from="styles/speakerDialog.css"></require>
+    
+  <ux-dialog class="speaker-dialog">
+    <ux-dialog-header>
+      <img height="75" width="75" src="https://pbs.twimg.com/profile_images/${speaker.img}">
+      <p class="speaker-tag">speaker</p>
+    </ux-dialog-header>
+    <ux-dialog-body>
+      <p class="dialog-name">${speaker.firstName} ${speaker.lastName}</p>
+      <p class="dialog-location">${speaker.location}</p>
+      <p class="dialog-description">${speaker.description}</p>
+      <ul class="dialog-profiles">
+        <li class="dialog-profile dialog-profile-web" if.bind="speaker.linkedin">
+          <a class="fa fa-linkedin" href="${speaker.linkedin}" target="_blank"></a>
+        </li>
+        <li class="dialog-profile dialog-profile-web" if.bind="speaker.twitter">
+          <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}" target="_blank"></a>
+        </li>
+        <li class="dialog-profile dialog-profile-web" if.bind="speaker.web">
+          <a class="fa fa-globe" href="${speaker.web}" target="_blank"></a>
+        </li>
+      </ul>
+    </ux-dialog-body>
+  </ux-dialog>
+</template>

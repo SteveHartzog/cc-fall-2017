@@ -1,0 +1,11 @@
+<template>
+  <require from="styles/materialize.min.css"></require>
+	<require from="styles/app.css"></require>
+
+	<md-colors md-primary-color="black" md-accent-color="#1e428c"></md-colors>
+
+	<header router.bind="router"></header>
+	<div class="body">
+		<router-view class="content"></router-view>
+	</div>
+</template>

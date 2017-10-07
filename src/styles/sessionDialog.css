@@ -1,0 +1,39 @@
+.session-dialog {
+  font-family: "Montserrat";
+  width: 600px;
+  position: absolute;
+  left: calc(-300px + 50vw);
+}
+.session-dialog .dialog-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.session-dialog .dialog-name-select {
+  display:block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.session-dialog .dialog-room-select {
+  display:block;
+  color: #777;
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 1.75;
+}
+
+.session-dialog .dialog-description {
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 1.75;
+}

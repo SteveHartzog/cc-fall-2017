@@ -1,0 +1,16 @@
+<template bindable="router">
+  <md-navbar fixed="true">
+    <ul class="left">
+      <li md-waves>
+          <a href="/" class="header-title"><i class="fa fa-code"></i> ${router.title}</a>
+        </li>
+    </ul>
+    <ul class="right">
+      <template repeat.for="row of router.navigation ">
+        <li md-waves="color: light;" class="${row.isActive ? 'active' : ''} ">
+          <a href.bind="row.href">${row.title}</a>
+        </li>
+      </template>
+    </ul>
+  </md-navbar>
+</template>
